@@ -27,6 +27,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 header .logo{
@@ -41,6 +43,8 @@ header ul{
 
 header ul li{
   list-style: none;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
 }
 
 header ul li a{
@@ -49,6 +53,19 @@ header ul li a{
   font-weight: 400;
   margin-left: 40px;
   text-decoration: none;
+  text-align: center; /* Center-align the text */
+  padding: 10px 20px; /* Add padding for spacing */
+}
+
+/* Add a background color and rounded corners on hover */
+header ul li:hover {
+  background: #017143; /* Change to the desired background color */
+  border-radius: 20px; /* Add rounded corners */
+}
+
+/* Change text color to white when hovering */
+header ul li:hover a {
+  color: #fff; /* Change text color to white */
 }
 .content{
   position: relative;
@@ -158,3 +175,40 @@ header ul li a{
   background: #017143;
   clip-path: circle(600px at right 800px);
 }
+
+/* Footer styles */
+footer {
+  background: #017143;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 50px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Adjust footer styles as needed */
+
